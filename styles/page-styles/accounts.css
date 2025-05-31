@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main {
+    position: relative;
+}
+a {
+    text-decoration: none !important;
+    color: var(--sections-color) !important;
+    font-family: "ProductSans";
+}
+a.btnlink:visited {
+    color: var(--sections-color);
+}
+
+a.btnlink, button, .bbtn {
+    color: white;
+    background-color: var(--accent-color);
+    padding: 1rem 2rem;
+    font-family: "ProductSansBlack";
+    font-size: 1rem;
+    color: white !important;
+    border-radius: 2rem;
+}
+a#gohomebtn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.actions {
+    display: flex;
+}
+button, .bbtn {
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.card-static {
+    cursor: default;
+    display: flex;
+    justify-content: space-between ;
+    width: 80%;
+    max-width: 40rem;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--accent-color);
+    color: var(--sections-color);
+}
+
+
+.modern-textbox {
+    width: 80%;
+    max-width: 40rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+span {
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+    
+}
+
+.hist {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}

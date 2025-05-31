@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+} */
+/* .accepted h3 {
+    color: rgb(41, 90, 61)
+}
+
+ .rejected h3 {
+    color: rgb(106, 48, 71);
+} */
+
+.hello-container {
+    text-align: center;
+}
+.april {
+    color:var(--accent-color);
+    font-family: "ProductSansBlack";
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 5px -2px var(--accent-color);
+    margin-top: 15px;
+    padding: 20px 25px;
+    /*margin-left: 50%;
+    transform: translate(-50%, 0); */
+    cursor: default;
+    transition: 500ms;
+    font-size: 1.3em;
+}
+.april:hover {
+    /* color: white;
+    background-color: var(--accent-color); */
+    box-shadow: 0 0 20px 0 var(--accent-color);
+    transition: 1000ms;
+    transform: translate(0, -2px);
+    user-select: none;
+}
+
+
+
+
+

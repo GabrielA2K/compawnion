@@ -1,0 +1,104 @@
+@media 
+(min-width: 680px) and (max-width: 1180px) {
+    .title-bar {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgb(227, 212, 241);
+    }
+    .side-nav { display: none; }
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    .section__shortcut { flex-direction: row; }
+    h2.section__name { margin-left: 12vw; }
+
+    .tablet-nav {
+        width: 65vw;
+        height: 65px;
+        right: 10%;
+        position: absolute;
+        height: 65px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: transparent;
+    }
+    .tablet-nav__item__icon {
+        display: block;
+        fill: var(--sections-color);
+        position: relative;
+        width: 27px;
+        height: 27px;
+        transition: 200ms;
+        margin: 19px 25px auto 25px;
+        cursor: pointer;
+    }
+    .tablet-nav__item__underline-div {
+        position: absolute;
+        height: 3px;
+        width: 65vw;
+        margin: auto 6px;
+        background-color: transparent;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .tablet-nav-underline {
+        background: transparent;
+        height: 100%;
+        width: 40px;
+        border-radius: 2px 2px 0 0;
+        position: relative;
+        transition: 200ms;
+        margin: auto 18.5px;
+    }
+    .tablet-nav-underline:last-child {
+        margin-right: 24px;
+    }
+
+    .tablet-nav-icon-default:hover {
+        fill: var(--accent-color);
+        /* transform: translate(0, -2px); */
+        transition: 200ms;
+    }
+    .tablet-nav__item__icon:active {
+        fill: var(--accent-color);
+        transform: translate(0, 2px);
+        transition: 200ms;
+    }
+    .tablet-nav-selected {
+        background: var(--accent-color);
+
+    }
+    .tablet-nav-icon-selected {
+        fill: var(--accent-color);
+
+    }
+
+    .title-bar__avatar {
+        display: block;
+        width: 40px;
+        margin-left: auto;
+        margin-right: 3%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .letter-avatar {
+        width: 40px;
+        height: 40px;
+        background: var(--accent-gradient);
+        color: var(--card-color);
+        font-family: 'ProductSansBlack';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 3%;
+        border-radius: 50%;
+    }
+
+}

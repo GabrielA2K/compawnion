@@ -1,0 +1,61 @@
+.card {
+    background: var(--card-color);
+    box-shadow: 0 0 10px -5px var(--accent-color);
+    transition: 500ms;
+    cursor: pointer;
+    user-select: none;
+}
+.card:hover {
+    box-shadow: 8px 8px 20px -2px var(--desaturated-accent-color);
+    transform: translate(0px, -2px);
+    transition: 500ms;
+}
+.card:active {
+    box-shadow: 0 0 8px -2px var(--accent-color);
+    transform: translate(0px, 0px);
+    transition: 50ms;
+}
+h3.card__title {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    /* color: rgb(75, 75, 75); */
+    /*color: rgb(74, 61, 130);*/
+    font-family: 'ProductSansBlack', 'Arial Black';
+    margin-left: 25px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+p.card__subtitle {
+    font-size: 0.9em;
+    color: rgb(100, 100, 100);
+    /*color: rgb(94, 91, 127);*/
+    font-family: 'ProductSans', 'Arial';
+    margin: 6px 25px 10px 25px;
+}
+
+.card-static {
+    background: var(--card-color);
+    box-shadow: 0 0 10px -5px var(--accent-color);
+    transition: 500ms;
+    user-select: none;
+}
+
+
+
+.card-stationary {
+    background: var(--card-color);
+    box-shadow: 0 0 10px -5px var(--accent-color);
+    border: 1px solid rgba(129, 97, 209, 0.298);
+    /* box-shadow: 0 0 7px -3px var(--accent-color); */
+    transition: 300ms;
+    cursor: default;
+    user-select: none;
+}
+.card-stationary:hover {
+    box-shadow: 0 0 10px -3px rgb(129, 97, 209);
+    transition: 200ms;
+}
+/* .card-stationary:active {
+    box-shadow: 0 0 10px -3px rgb(129, 97, 209);
+    transition: 50ms;
+} */

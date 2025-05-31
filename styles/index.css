@@ -1,0 +1,89 @@
+@import "all.css";
+@import "title-bar.css";
+@import "side-nav.css";
+@import "main.css";
+@import "cards.css";
+
+@import "mobile_layout.css";
+@import "tablet_layout.css";
+
+
+
+
+@font-face {
+    font-family: ProductSans;
+    src:  url(../fonts/ProductSans.ttf);
+}
+@font-face {
+    font-family: ProductSansBlack;
+    src:  url(../fonts/ProductSansBlack.ttf);
+}
+
+@media (orientation: landscape) {
+    ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 3px;
+        height: 3px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(145, 131, 179, 0.747);
+        /* background-color: var(--desaturated-accent-color); */
+        border-radius: 10px;
+    }
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+html {
+    margin-left: calc(100vw - 100%);
+}
+
+:root {
+    /* --accent-color: rgb(129, 97, 209); */
+    --accent-color: #7f7bed;
+    --accent-gradient: linear-gradient(45deg, rgb(127, 127, 241), rgb(118, 83, 205));
+    --desaturated-accent-color: rgb(145, 131, 179);
+    --card-color: rgb(252, 250, 255);
+    /* --card-color: rgb(254, 253, 255); */
+    --navbar-color: rgb(247, 243, 255);
+    --sections-color: rgb(92, 84, 112);
+
+
+    --mobile-max: 680px;
+    --tablet-max: 1150px;
+}
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid var(--card-color);
+
+}
+h2, p, h1, h3, h4 {
+    font-family: 'ProductSansBlack', 'Arial Black';
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+    outline: 0;
+}
+
+@media print {
+    * {
+        display: none;
+    }
+}
+
+
+.title-bar__avatar,
+.letter-avatar,
+.side-nav__user__avatar,
+.letter-avatar-sidenav,
+.mobile-title-bar__avatar,
+.side-nav__user__name {
+    cursor: pointer;
+}
